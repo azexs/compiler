@@ -41,7 +41,7 @@
                             <mainClass>compiler.App</mainClass>
                         </manifest>
                     </archive>
-                    <finalName>compiler</finalName>
+                    <finalName>compiler/compiler</finalName>
                 </configuration>
             </plugin>
 
@@ -105,7 +105,7 @@
                             <goal>copy-resources</goal>
                         </goals>
                         <configuration>
-                            <outputDirectory>${basedir}/target/tototo</outputDirectory>
+                            <outputDirectory>${basedir}/target/compiler</outputDirectory>
                             <resources>
                                 <resource>
                                     <directory>resources</directory>
@@ -129,7 +129,7 @@
                             <goal>copy-dependencies</goal>
                         </goals>
                         <configuration>
-                            <outputDirectory>${project.build.directory}/tototo/lib</outputDirectory>
+                            <outputDirectory>${project.build.directory}/compiler/lib</outputDirectory>
                             <overWriteReleases>false</overWriteReleases>
                             <overWriteSnapshots>false</overWriteSnapshots>
                             <overWriteIfNewer>true</overWriteIfNewer>

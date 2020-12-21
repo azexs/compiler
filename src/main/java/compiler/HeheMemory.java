@@ -10,7 +10,7 @@ public class HeheMemory {
 
     public void declare(Variable var){
         var.location = index;
-        if(var.isArray()) index+= var.getRange(); else index++;
+        if(var.isArray) index+= var.getRange(); else index++;
         memory.add(var);
     }
 

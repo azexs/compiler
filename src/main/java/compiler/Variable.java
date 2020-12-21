@@ -25,10 +25,6 @@ public class Variable {
         this.rangeEnd = rangeEnd;
     }
 
-    public Boolean isArray(){
-        return isArray;
-    }
-
     public long getRange() {
         return rangeEnd-rangeStart+1;
     }
